@@ -6,7 +6,7 @@
 
 接触vue一年多了，随着学习的深入，越发地喜爱这款渐进式的MVVM框架，于是决定从头到尾撸一个vue项目，以此来巩固自己所学。喜欢vue而在学习vue全家桶的童鞋，如果正苦于不知从何处实践，可以将此项目作为小小的参考。
 
-本项目使用vue自家的UI框架vux直接生成模板，与用vue-cli生成的项目模板大同小异，不同的是vux模板自动加入了vux的配置。有能力的童鞋也可以参照文档自己折腾一下[vux](https://doc.vux.li/zh-CN/install/npm.html) 。
+本项目使用vue自家的UI框架vux直接生成模板，与用vue-cli生成的项目模板大同小异，不同的是vux模板自动加入了vux的配置。有能力的童鞋也可以参照文档自己折腾一下[vux](https://doc.vux.li/zh-CN/install/npm.html)。
 
 ### 1. 关于数据请求的说明
 
@@ -49,19 +49,19 @@
 
 ### 安装
 
-  # clone repository
-  git clone https://github.com/VinsonChan/vue-moji.git
-
-  # enter project
-  cd vue-moji
-
-  # install dependencies
-  npm install
+	#clone repository
+	git clone https://github.com/VinsonChan/vue-moji.git
+	
+	#enter project
+	cd vue-moji
+	
+	#install dependencies
+	npm install
 
 ### 运行
 
-  # serve with hot reload at localhost:8080
-  npm run dev
+	# serve with hot reload at localhost:8080
+	npm run dev
 
 ## 实现功能
 
