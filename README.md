@@ -15,7 +15,7 @@
 
 ### 2. 关于图标icon的说明
 
->本项目中用到的天气相关的图标皆来自魅族手机自带的天气软件，而其它功能性图标采用当下最流行iconfont解决文案，本人具体用的是国内的 [阿里的矢量图标库存](http://www.iconfont.cn/)，图标的库存也是蛮惊人的。具体的操作方法可以看看我写的一篇文章。[在线制作文字图标]()
+>本项目中用到的天气相关的图标皆来自魅族手机自带的天气软件，而其它功能性图标采用当下最流行iconfont解决文案，本项目中具体用的是国内的 [阿里的矢量图标库存](http://www.iconfont.cn/)，其图标种类丰富，也支持在线导入svg文件，是一个在线制作iconfont的好网站。
 
 ### 3. 关于项目中插件的说明
 
@@ -48,20 +48,20 @@
 >注意：由于涉及大量的 ES6/7 等新属性，node 需要 6.0 以上版本
 
 ### 安装
-	
-	# clone repository
-	git clone https://github.com/VinsonChan/vue-moji.git
-	
-	# enter project
-	cd vue-moji
 
-	# install dependencies
-	npm install
+  # clone repository
+  git clone https://github.com/VinsonChan/vue-moji.git
+
+  # enter project
+  cd vue-moji
+
+  # install dependencies
+  npm install
 
 ### 运行
 
-	# serve with hot reload at localhost:8080
-	npm run dev
+  # serve with hot reload at localhost:8080
+  npm run dev
 
 ## 实现功能
 

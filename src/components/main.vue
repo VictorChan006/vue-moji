@@ -130,20 +130,6 @@ import {mapMutations,mapState} from 'vuex'
 import {getNews} from '@/service/getData'
 
 export default{
-  /*directives:{
-    btn:{
-      bind:function(el,binding){
-        let classN = binding.value.className;
-        el.addEventListener("touchstart",function(e){
-          addClass(el,classN)
-        })
-      },
-      unbind:function(el,binding){
-        let classN = binding.value.className;
-        removeClass(el,classN)
-      }
-    }
-  },*/
   data(){
     return{
       res: this.result,
@@ -260,9 +246,6 @@ export default{
         if(nowM>=start&&nowM<=end){
           this.drawSun(params)
         }
-        else{
-          console.log("太阳下山了")
-        }
       }
     },
     drawSun(param){
@@ -347,7 +330,6 @@ export default{
     },
     initNews(){
       getNews().then(res=>{
-        // console.log(res)
         let len = res.result.data.length;
         const arr = [];
         let index = '';
@@ -370,16 +352,13 @@ export default{
       this.$nextTick(function(){
         let top = this.$refs.tip.offsetTop;
         this.$parent.chartOffsetTop = top;
-        // console.log(this.$parent.chartOffsetTop)
       })
     },
     changeBg(e){
       e = e || event;
-      // console.log(e);
       e.target.style.background = "blue"
     },
     goTo(url){
-      // this.$router.push({path:'/news',query:{link:url}})
       window.location.href=url;
     }
   },

@@ -7,7 +7,7 @@
     <div id="rcmlist">
       <h5 class="header">今日推荐</h5>
       <div class="recommand" v-for="(item,index) in list" :key="index">
-        <div class="box" @click="goTo(item.url)">
+        <div class="box">
           <div class="img">图片占位符</div>
           <div class="content">
             <h5>{{item.title}}</h5>
@@ -16,7 +16,6 @@
         </div>
       </div>
     </div>
-
   </div>
 </template>
 
@@ -35,11 +34,9 @@ export default{
       list: [{
         title: '每日早睡提醒',
         desc: '坚持早睡，9大好处回馈你的身体',
-        url: '/component/cell'
       }, {
         title: '标题二',
         desc: '由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。',
-        url:'/component/radio',
       }],
     }
   },

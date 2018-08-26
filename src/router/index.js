@@ -9,7 +9,6 @@ const search = () => import(/* webpackChunkName: "search" */'@/page/search/searc
 const setting = () => import(/* webpackChunkName: "setting" */'@/page/setting/setting')
 const warning = () => import(/* webpackChunkName: "warning" */'@/page/warning/warning')
 const aircondition = () => import(/* webpackChunkName: "aircondition" */'@/page/aircondition/aircondition')
-// const news = () => import(/* webpackChunkName: "news" */'@/page/news/news')
 
 export default [{
   path: '/',
@@ -49,10 +48,5 @@ export default [{
       path:'/aircondition',
       component: aircondition
     },
-    // {
-    //   path:'/news',
-    //   component: news,
-    // }
   ]
-
 }]

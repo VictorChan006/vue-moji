@@ -49,7 +49,6 @@ export default{
       dist:0,
       drawChart:false,
       finishRefresh:false,
-      // change:false
       sliderY:'',
     }
   },
@@ -89,7 +88,6 @@ export default{
       this.showMenus = true;
     },
     initCity(){
-      // removeStorage("res");
       AMap.plugin('AMap.CitySearch',() =>{//异步加载插件,使用citysearch插件
         var position = new AMap.CitySearch();
         // citysearch插件getLocalCity方法(根据传入或自动获取的ip——‘status’,返回查询结果)
@@ -167,7 +165,6 @@ export default{
     initSlider(){
       this.$nextTick(function(){
         //初始化内容高度
-        // this.$refs.content.style.height = this.$refs.content.offsetHeight+"px";
         const sliderX = new this.$BScroll(this.$refs.wrapper,{
           scrollX:true,
           scrollY:false,
@@ -179,12 +176,10 @@ export default{
         })
         //获取当前页索引
         this.getIndex(sliderX);
-        // //当index被改变时自动滚动到指定页
-        sliderX.goToPage(this.index); //只当sliderX的content改变时执行
+        //当index被改变时自动滚动到指定页，只当sliderX的content改变时执行
+        sliderX.goToPage(this.index);
 
         /****************纵向滚动************/
-        //初始化内容高度
-
         this.sliderY = new this.$BScroll(this.$refs.scrollY,{
           scrollY:true,
           scrollX:false,
@@ -232,13 +227,6 @@ export default{
         this.drawChart = true;
       }
     },
-    //解决滚动回弹触发下拉刷新
-   /* handleScrollEnd(obj){
-      if(obj.y==0){
-        this.$refs.loading.querySelector('span').innerHTML = "下拉刷新";
-        this.$refs.loading.style.top = 6+"px";
-      }
-    },*/
     changeOpacity(){
       //reload随动
       let dist = this.dist;

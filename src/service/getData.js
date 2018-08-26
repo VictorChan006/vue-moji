@@ -11,8 +11,7 @@ export const getWeather = (city,time) => fetch('/weather/query',{
 export const getNews = () => fetch('/toutiao/index',{
   type:"shehui"
 })
-//新闻链接内容
-// export const loadNews = url => fetch("http://mini.eastday.com/mobile/180813111656382.html")
+
 
 
 
