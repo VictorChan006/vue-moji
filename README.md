@@ -89,25 +89,25 @@
 
 ## 效果截图
 
-###主页效果图
+### 主页效果图
 
 ![index](https://github.com/VinsonChan/ImageCache/raw/moji/moji/1index.gif)
 ![slider](https://github.com/VinsonChan/ImageCache/raw/moji/moji/3slideX.gif)
 
-###添加、删除城市
+### 添加、删除城市
 
 ![addCity](https://github.com/VinsonChan/ImageCache/raw/moji/moji/2addCity.gif)
 ![rmCity](https://github.com/VinsonChan/ImageCache/raw/moji/moji/4removCity.gif)
 
-###异步加载日出图
+### 异步加载日出图
 
 ![sunRise](https://github.com/VinsonChan/ImageCache/raw/moji/moji/5sunrise.gif)
 
-###新闻资讯开关
+### 新闻资讯开关
 
 ![news](https://github.com/VinsonChan/ImageCache/raw/moji/moji/7news.gif)
 
-###分享页与空气质量页
+### 分享页与空气质量页
 
 ![share](https://github.com/VinsonChan/ImageCache/raw/moji/moji/8share.gif)
 ![airCondition](https://github.com/VinsonChan/ImageCache/raw/moji/moji/6air.gif)
