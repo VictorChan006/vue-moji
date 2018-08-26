@@ -75,7 +75,6 @@ export default{
   beforeRouteLeave(to, from, next){
     if(to.path == "/home"&&this.change){
       to.meta.keepAlive = false;
-      console.log("解除keepalive")
     }
     next()
   },

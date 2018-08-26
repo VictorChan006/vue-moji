@@ -251,7 +251,6 @@ export default{
     rotate(){
       this.$refs.loading.querySelector('span').innerHTML = "刷新中";
       let load = this.$refs.loading.querySelector('.loadIcon');
-      console.log("旋转图标")
       let angle = 0;
       let timer = setInterval(()=>{
         angle += 60;
@@ -274,7 +273,6 @@ export default{
       }).catch(err =>{
         alert(`获取天气失败。失败原因:\n ${err}`)
       })
-      console.log("数据重载完成");
       //数据重载后通知sliderY重载已结束,延迟1秒执行
       setTimeout(()=>{
         this.finishRefresh = true;

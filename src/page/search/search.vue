@@ -8,8 +8,6 @@
           @result-click="resultClick"
           :results="results"
           v-model="value"
-          @on-focus="onFocus"
-          @on-cancel="onCancel"
           @on-submit="onSubmit"
           ref="search">
         </search>
@@ -61,7 +59,6 @@ export default{
   beforeRouteLeave(to, from, next){
     if(to.path == "/home"){
       to.meta.keepAlive = false;
-      console.log("解除keepalive")
     }
     next()
   },
@@ -76,7 +73,6 @@ export default{
       window.alert('you click the result item: ' + JSON.stringify(item))
     },
     getResult (val) {
-      console.log('on-change', val)
       this.results = val ? this.pushResult(val) : []
     },
     pushResult(val){
@@ -96,12 +92,6 @@ export default{
         position: 'top',
         text: 'on submit'
       })
-    },
-    onFocus () {
-      console.log('on focus')
-    },
-    onCancel () {
-      console.log('on cancel')
     },
     async add(data){
       if(data==='北京'||data==='上海'||data==='天津'||data==='重庆'||data==='香港'){
@@ -131,7 +121,6 @@ export default{
               }
             })
             let response = res.result;
-            // let temp = JSON.parse(getStorage('res'));
             temp.push(response);
             setStorage('res',temp);
           })
@@ -143,9 +132,6 @@ export default{
         else{
           this.showAlert = true;
         }
-      }
-      else{
-        console.log("暂时只支持北京，上海，天津，重庆，香港的天气查询")
       }
     },
   },

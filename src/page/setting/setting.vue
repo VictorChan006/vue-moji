@@ -35,7 +35,6 @@ export default{
   beforeRouteLeave(to, from, next){
     if(to.path == "/home"&&window.oldShowNews!==this.showNews){
       to.meta.keepAlive = false;
-      console.log("解除keepalive")
     }
     next()
   },

@@ -128,7 +128,6 @@ export default{
       let height = this.terminalHeight - dom.offsetTop
       if(height<200){
         dom.style.height = 200 + "px";
-        console.log("太窄了")
       }
       else {
         dom.style.height = this.terminalHeight - dom.offsetTop + "px";
